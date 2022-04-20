@@ -1,0 +1,67 @@
+.modalContainer {    
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.modalBody {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: view .8s;
+}
+
+.modalBody h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.modalBody > form > .msj-error {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.modalBody > form > .container-button, .modalBody > .container-button {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.modalBody button {
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    margin: 0 15px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 2px 1px;
+    transition: all ease-in .2s;
+}
+
+.container-button > button:hover, .modalBody > button:hover {
+    transform: translateY(-1px);
+}
+
+@keyframes view {
+    0% { opacity: 0; transform: translateY(-80px);}
+    100% { opacity: 1; transform: translateY(0);}
+}

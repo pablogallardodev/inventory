@@ -1,0 +1,116 @@
+.content > p {
+    text-align: center;
+    margin: 0;
+}
+
+.container-move {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-move > .container-item {
+    flex:1;
+    margin: .9rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: var(--bacground);
+    border: 1px solid var(--border)
+}
+
+.product-item * {
+    margin: 0;
+    padding: 0;
+}
+
+.container-item > h2 {
+    margin: 5px auto;
+    color: var(--bacneg);
+}
+
+.container-item > p {
+    font-size: medium;
+    text-align: justify;
+    margin: 5px auto;
+    width: 90%;
+    color: var(--bacneg);
+}
+
+.container-item > .searchContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 85%;
+    margin: 1rem auto;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--border);
+}
+
+.container-item .product-item {
+    background-color: var(--bacdash);
+    border-radius: 15px;
+    color: var(--bacneg);
+    margin: 15px;
+    padding: 5px;
+    box-shadow: 0 0 5px var(--border);
+    display: flex;
+    align-items: center;
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+
+.product-item img, .product-item .emptyImg {
+    width: 8em;
+    height: auto;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+}
+
+.container-item > .form-move {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-move > .form-group {
+    width: 95%;
+    margin: 5px;
+}
+
+.form-move > .container-button {
+    width: 100%;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group > .container-type {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.container-type > button {
+    flex: 1;
+    background-color: dodgerblue;
+    margin: 0 2px;
+    padding: 8px 20px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 2px 1px;
+    transition: all ease-in .2s;
+}

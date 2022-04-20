@@ -1,0 +1,7 @@
+footer {
+    background-color: var(--bacground);
+    color: var(--bacneg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,38 @@
+.container-cards {
+    margin: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-cards > .card, .container-cards > .card-chart {
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    background-color: var(--bacground);
+    color: var(--bacneg);
+}
+
+.card > svg { margin-right: 1rem; }
+
+.card *, .card-chart *, .card-table * {
+    margin: 0;
+    padding: 0;
+}
+
+.container-cards > .card-chart {
+    background-color: var(--bacground);
+    color: var(--bacneg);
+    width: 45%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-chart > .container-chart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}

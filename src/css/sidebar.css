@@ -1,0 +1,69 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    height: 100vh;  
+    background-color: var(--bacground);
+    border-right: 1px solid var(--border);
+}
+
+.sidebar > .logoContainer, .sidebar > .itemContainer,
+.sidebar > .itemContainerA{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.sidebar .logo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--logo);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 1px 1px;
+    padding: 5px;
+    margin: 5px
+}
+
+.sidebar > .itemContainer, .sidebar > .itemContainerA {
+    text-decoration: none;
+    color: var(--bacneg);
+    width: 80%;
+    padding: 5px;
+    transition: all ease-in .2s;
+}
+
+.sidebar > .itemContainerA {
+    background-color: var(--contrast);
+    color: var(--text);
+}
+
+.sidebar > .switch {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar p {
+    margin: 0 0 0 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.sidebar > .itemContainer:hover {
+    background-color: var(--contrast);
+    color: var(--text);
+    transform: translateY(-2px);
+}
+
+.sidebar > .itemContainerA:hover {
+    transform: translateY(-2px);
+}

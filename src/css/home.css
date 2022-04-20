@@ -1,0 +1,39 @@
+.head, .leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.leftContainer h1 {
+    font-size: 4rem;
+    text-align: center;
+    transform: rotate(-5deg);
+    color: var(--bacneg);
+}
+
+.leftContainer button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bacneg);
+    color: var(--bacground);
+    font-size: 1rem;
+    border: 1px solid var(--bacneg);
+    border-radius: 10px;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.leftContainer button:hover {
+    transform: translateY(-3px);
+}
+
+.head img{
+    width: 50%;
+    height: auto;
+}

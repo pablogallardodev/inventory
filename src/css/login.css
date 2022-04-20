@@ -1,0 +1,62 @@
+.loginSection {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardLogin {
+    width: auto;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px var(--border);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bacground);
+}
+
+.cardLogin input {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cardLogin input:focus {
+    box-shadow: 0px 0px 15px var(--border);
+}
+
+.cardLogin button {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in .2s;
+}
+
+.cardLogin button:hover {
+    box-shadow: 0px 0px 15px var(--border);
+}
+
+.cardLogin svg {
+    margin-right: 10px;
+}
+
+.cardLogin span {
+    color: dodgerblue;
+    cursor: pointer;
+}

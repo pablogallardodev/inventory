@@ -1,0 +1,46 @@
+.user-data {
+    width: 95%;
+    max-width: 50rem;
+    margin: 2rem auto;
+    border-radius: .5rem;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bacground);
+}
+
+.user-data > .img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-data > .img-container > img, .user-data > .img-container > svg {
+    width: 10rem;
+    height: auto;
+    padding: 1px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--border);
+}
+
+.user-data > .form-group {
+    width: 95%;
+    margin:5px;
+}
+
+.user-data > .form-group > span {
+    color: dodgerblue;
+    cursor: pointer;
+    margin: 0;
+}
+
+.user-data > .container-button {
+    width: 100%;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

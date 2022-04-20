@@ -1,0 +1,58 @@
+.dark {
+  --bacground: #2A333D;
+  --bacneg: white;
+  --text: rgb(45, 45, 45);
+  --logo: rgba(255, 255, 255, 0.9);
+
+  --contrast: white;
+  --bacdash: #36414E;
+  --border: transparent;
+}
+
+.light {
+  --bacground: white;
+  --bacneg: rgb(45, 45, 45);
+  --text: white;
+  --logo: rgba(0, 0, 0, 0.1);
+
+  --contrast: dodgerblue;
+  --bacdash: #e7ecf1;
+  --border: #ced4dd;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos generales para el proyecto */
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--bacdash);
+}
+
+section {
+  margin: auto;
+  max-width: 1200px;
+  color: var(--bacneg);
+}
+
+.containerLogged {
+  display: flex;
+  background-color: var(--bacdash);
+}
+
+.containerLogged > .content {
+  margin-left: 10rem;
+  width: 100%;
+}

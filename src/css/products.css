@@ -1,0 +1,61 @@
+.content > h1 {
+    margin-left: 50px;
+    margin-top: 50px;
+    color: var(--bacneg);
+}
+
+.actionSection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.actionSection > .searchContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 35%;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--border);
+}
+
+.searchContainer > input {
+    width: 95%;
+    border: none;
+    font-size: large;
+    font-weight: 300;
+    margin-left: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.searchContainer > svg {
+    background-color: #ddd;
+    padding: 5px;
+    margin-left: -5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 1px 1px;
+}
+
+.actionSection > .add-product {
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 2px 1px;
+    transition: all ease-in .2s;
+}
+
+.actionSection > .add-product:hover {
+    transform: translateY(-2px)
+}

@@ -1,0 +1,94 @@
+.containerFormProducts {
+    width: 85%;
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    border: 1px solid var(--border);
+    background-color: var(--bacground);
+}
+
+.containerFormProducts > .container-column {
+    display: flex;
+}
+
+.container-column > .column {
+    flex: 1;
+    padding: .25rem;
+    margin: 0 1rem;
+}
+
+.column > .img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container > img, .img-container > svg {
+    width: 15rem;
+    height: 140px;
+    margin: 10px 0;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.column > .form-group {
+    width: 95%;
+    margin: 5px;
+}
+
+.form-group > label {
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--bacneg);
+}
+
+.form-group > input {
+    display: inline;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    font-size: 16px;
+}
+
+.form-group > select {
+    display: block;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    font-size: 16px;
+}
+
+.containerFormProducts > .container-button {
+    width: 100%;
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-button > button {
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    margin: 0 15px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 2px 1px;
+    transition: all ease-in .2s;
+}
+
+.container-button > button:hover {
+    transform: translateY(-2px)
+}
