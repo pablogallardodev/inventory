@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 
 //Librerias de firebase
 import firebase from "firebase";
-import firebaseConfig from "./config/firebaseConfig";
 
 import Router from './routes/Router';
 import './css/index.css';
 
 // Iniciamos firebaseApp
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG));
 
 ReactDOM.render(
   <Suspense>
